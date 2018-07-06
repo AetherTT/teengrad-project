@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    tools:context=".MainActivity"
+    android:id="@+id/osnova"
+    android:background="#e7e8ea"
+    android:contextClickable="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textInfo"
+        android:textSize="22dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:visibility="visible" />
+
+    <ListView
+        android:id="@+id/pairedlist"
+        android:layout_width="240dp"
+        android:layout_height="184dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textInfo"
+        android:layout_marginLeft="20dp"
+
+        android:layout_marginTop="30dp"
+        android:visibility="visible" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e7e7e5"
+        android:id="@+id/ButPanel"
+        android:visibility="gone">
+
+
+        <!--D10-->
+
+
+        <!--D11-->
+
+
+        <!--D12-->
+
+
+        <!--D13-->
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@android:drawable/button_onoff_indicator_on"
+        android:onClick="onClickBut8"
+        android:text="Заряжать" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="129dp"
+        android:background="@android:drawable/button_onoff_indicator_on"
+        android:onClick="onClickBut9"
+        android:text="Тип устройства" />
+
+</RelativeLayout>
